@@ -1,3 +1,4 @@
 # Ignorar archivos .env
 .env
+/__pycache__
 
