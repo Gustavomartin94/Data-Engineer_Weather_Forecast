@@ -6,7 +6,8 @@ CREATE TABLE clima (
     Temperatura_C FLOAT,
     Precipitacion FLOAT,
     Velocidad_de_viento FLOAT,
-    Fecha_Actualizacion TIMESTAMP
+    Fecha_Actualizacion TIMESTAMP,
+    Primary_Key VARCHAR(100)
     
 );
 
