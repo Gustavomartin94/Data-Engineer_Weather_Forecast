@@ -4,7 +4,7 @@ CREATE TABLE clima (
     Fecha_pronost TIMESTAMP WITH TIME zone,
     Ciudad VARCHAR(100),
     Temperatura_C FLOAT,
-    Precipitacion FLOAT,
+    Humedad_porcentaje FLOAT,
     Velocidad_de_viento FLOAT,
     Fecha_Actualizacion TIMESTAMP,
     Primary_Key VARCHAR(100)
