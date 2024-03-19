@@ -6,8 +6,7 @@ load_dotenv()
 
 # Obtener las variables de entorno
 #API
-USERNAM = os.getenv("USERNAM")
-PASSWORD = os.getenv("PASSWORD")
+KEY = os.getenv("KEY")
 
 #SQL
 dbname= os.getenv("dbname")
