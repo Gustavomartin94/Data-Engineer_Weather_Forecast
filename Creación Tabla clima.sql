@@ -2,7 +2,7 @@ CREATE TABLE clima (
     Indice INT,
     Latitud DECIMAL(9,6),
     Longitud DECIMAL(9,6),
-    Fecha_pronost TIMESTAMP WITH TIME zone,
+    Fecha_pronost VARCHAR(100),
     Ciudad VARCHAR(100),
     Temperatura_C FLOAT,
     Humedad_porcentaje FLOAT,
