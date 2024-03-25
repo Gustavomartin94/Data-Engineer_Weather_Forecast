@@ -2,7 +2,7 @@
 .env
 __pycache__/
 Update Github.txt
+venv/
 old/
-.idea/
 
 
