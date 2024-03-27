@@ -2,3 +2,4 @@ pip install meteomatics
 pip install python-dotenv
 pip install sqlalchemy
 pip install psycopg2
+pip install apache-airflow
