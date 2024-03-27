@@ -1,5 +1,5 @@
-pip install meteomatics
-pip install python-dotenv
-pip install sqlalchemy
-pip install psycopg2
-pip install apache-airflow
+meteomatics
+python-dotenv
+sqlalchemy
+psycopg2
+apache-airflow
