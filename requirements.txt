@@ -1,5 +1,8 @@
 meteomatics
 python-dotenv
-sqlalchemy
 psycopg2
 apache-airflow
+datetime
+pandas
+sqlalchemy
+requests
