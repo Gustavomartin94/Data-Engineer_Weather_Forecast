@@ -1,3 +1,3 @@
-Este trabajo consiste en obtener una API  del pronóstico del clima de los próximos 2 días, cada 6 horas (Temperatura, % de Humedad y velocidad del viento) y exportarlo en una base de datos de Redshift. 
+Este trabajo consiste en obtener una API del pronóstico del clima de las próximas 12 horas (Temperatura, % de Humedad y velocidad del viento) en 12 ciudades y exportarlo en una base de datos de Redshift. 
 
-El usuario debera realizar un pip install -r requirements.txt y luego ejecutar la notebook paso a paso. 
+El usuario deberá realizar un pip install -r requirements.txt y luego ejecutar Script.py. 
