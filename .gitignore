@@ -7,4 +7,4 @@ old/
 Entregable_Gustavo_Martin.ipynb
 
 # Excepto los archivos .env dentro de la carpeta Airflow_Docker
-Airflow_Docker/*.env
+!Airflow_Docker/*.env

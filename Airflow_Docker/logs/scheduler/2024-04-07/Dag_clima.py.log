@@ -299,3 +299,157 @@
 [2024-04-07T15:00:25.369+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:00:25.369+0000] {dag.py:3047} INFO - Sync 1 DAGs
 [2024-04-07T15:00:25.446+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:00:25.445+0000] {dag.py:3834} INFO - Setting next_dagrun for dag_clima to 2024-04-07 00:00:00+00:00, run_after=2024-04-08 00:00:00+00:00
 [2024-04-07T15:00:25.495+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Dag_clima.py took 0.371 seconds
+[2024-04-07T15:00:55.913+0000] {processor.py:161} INFO - Started process (PID=2420) to work on /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:00:55.917+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Dag_clima.py for tasks to queue
+[2024-04-07T15:00:55.928+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:00:55.927+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:00:55.971+0000] {processor.py:840} INFO - DAG(s) 'dag_clima' retrieved from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:00:56.021+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:00:56.020+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-07T15:00:56.083+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:00:56.082+0000] {dag.py:3834} INFO - Setting next_dagrun for dag_clima to 2024-04-07 00:00:00+00:00, run_after=2024-04-08 00:00:00+00:00
+[2024-04-07T15:00:56.138+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Dag_clima.py took 0.326 seconds
+[2024-04-07T15:01:26.433+0000] {processor.py:161} INFO - Started process (PID=2477) to work on /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:01:26.435+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Dag_clima.py for tasks to queue
+[2024-04-07T15:01:26.439+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:01:26.438+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:01:26.473+0000] {processor.py:840} INFO - DAG(s) 'dag_clima' retrieved from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:01:26.508+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:01:26.508+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-07T15:01:26.558+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:01:26.557+0000] {dag.py:3834} INFO - Setting next_dagrun for dag_clima to 2024-04-07 00:00:00+00:00, run_after=2024-04-08 00:00:00+00:00
+[2024-04-07T15:01:26.661+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Dag_clima.py took 0.235 seconds
+[2024-04-07T15:01:57.316+0000] {processor.py:161} INFO - Started process (PID=2534) to work on /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:01:57.318+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Dag_clima.py for tasks to queue
+[2024-04-07T15:01:57.326+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:01:57.325+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:01:57.365+0000] {processor.py:840} INFO - DAG(s) 'dag_clima' retrieved from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:01:57.404+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:01:57.403+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-07T15:01:57.440+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:01:57.440+0000] {dag.py:3834} INFO - Setting next_dagrun for dag_clima to 2024-04-07 00:00:00+00:00, run_after=2024-04-08 00:00:00+00:00
+[2024-04-07T15:01:57.478+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Dag_clima.py took 0.170 seconds
+[2024-04-07T15:02:27.559+0000] {processor.py:161} INFO - Started process (PID=2591) to work on /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:02:27.562+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Dag_clima.py for tasks to queue
+[2024-04-07T15:02:27.566+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:02:27.565+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:02:27.590+0000] {processor.py:840} INFO - DAG(s) 'dag_clima' retrieved from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:02:27.624+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:02:27.624+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-07T15:02:27.665+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:02:27.664+0000] {dag.py:3834} INFO - Setting next_dagrun for dag_clima to 2024-04-07 00:00:00+00:00, run_after=2024-04-08 00:00:00+00:00
+[2024-04-07T15:02:27.713+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Dag_clima.py took 0.159 seconds
+[2024-04-07T15:02:58.737+0000] {processor.py:161} INFO - Started process (PID=2648) to work on /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:02:58.740+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Dag_clima.py for tasks to queue
+[2024-04-07T15:02:58.745+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:02:58.744+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:02:58.778+0000] {processor.py:840} INFO - DAG(s) 'dag_clima' retrieved from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:02:58.820+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:02:58.820+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-07T15:02:58.867+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:02:58.867+0000] {dag.py:3834} INFO - Setting next_dagrun for dag_clima to 2024-04-07 00:00:00+00:00, run_after=2024-04-08 00:00:00+00:00
+[2024-04-07T15:02:58.906+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Dag_clima.py took 0.175 seconds
+[2024-04-07T15:03:29.000+0000] {processor.py:161} INFO - Started process (PID=2705) to work on /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:03:29.002+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Dag_clima.py for tasks to queue
+[2024-04-07T15:03:29.006+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:03:29.005+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:03:29.029+0000] {processor.py:840} INFO - DAG(s) 'dag_clima' retrieved from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:03:29.056+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:03:29.056+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-07T15:03:29.089+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:03:29.088+0000] {dag.py:3834} INFO - Setting next_dagrun for dag_clima to 2024-04-07 00:00:00+00:00, run_after=2024-04-08 00:00:00+00:00
+[2024-04-07T15:03:29.125+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Dag_clima.py took 0.129 seconds
+[2024-04-07T15:03:59.340+0000] {processor.py:161} INFO - Started process (PID=2762) to work on /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:03:59.342+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Dag_clima.py for tasks to queue
+[2024-04-07T15:03:59.346+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:03:59.346+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:03:59.371+0000] {processor.py:840} INFO - DAG(s) 'dag_clima' retrieved from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:03:59.399+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:03:59.398+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-07T15:03:59.431+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:03:59.431+0000] {dag.py:3834} INFO - Setting next_dagrun for dag_clima to 2024-04-07 00:00:00+00:00, run_after=2024-04-08 00:00:00+00:00
+[2024-04-07T15:03:59.467+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Dag_clima.py took 0.131 seconds
+[2024-04-07T15:04:30.061+0000] {processor.py:161} INFO - Started process (PID=2819) to work on /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:04:30.063+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Dag_clima.py for tasks to queue
+[2024-04-07T15:04:30.068+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:04:30.068+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:04:30.100+0000] {processor.py:840} INFO - DAG(s) 'dag_clima' retrieved from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:04:30.132+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:04:30.131+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-07T15:04:30.173+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:04:30.172+0000] {dag.py:3834} INFO - Setting next_dagrun for dag_clima to 2024-04-07 00:00:00+00:00, run_after=2024-04-08 00:00:00+00:00
+[2024-04-07T15:04:30.216+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Dag_clima.py took 0.162 seconds
+[2024-04-07T15:05:00.323+0000] {processor.py:161} INFO - Started process (PID=2876) to work on /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:05:00.325+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Dag_clima.py for tasks to queue
+[2024-04-07T15:05:00.330+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:05:00.329+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:05:00.370+0000] {processor.py:840} INFO - DAG(s) 'dag_clima' retrieved from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:05:00.406+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:05:00.405+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-07T15:05:00.452+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:05:00.452+0000] {dag.py:3834} INFO - Setting next_dagrun for dag_clima to 2024-04-07 00:00:00+00:00, run_after=2024-04-08 00:00:00+00:00
+[2024-04-07T15:05:00.495+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Dag_clima.py took 0.184 seconds
+[2024-04-07T15:05:30.828+0000] {processor.py:161} INFO - Started process (PID=2933) to work on /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:05:30.830+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Dag_clima.py for tasks to queue
+[2024-04-07T15:05:30.833+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:05:30.833+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:05:30.864+0000] {processor.py:840} INFO - DAG(s) 'dag_clima' retrieved from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:05:30.898+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:05:30.897+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-07T15:05:30.935+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:05:30.935+0000] {dag.py:3834} INFO - Setting next_dagrun for dag_clima to 2024-04-07 00:00:00+00:00, run_after=2024-04-08 00:00:00+00:00
+[2024-04-07T15:05:30.971+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Dag_clima.py took 0.149 seconds
+[2024-04-07T15:06:01.426+0000] {processor.py:161} INFO - Started process (PID=2990) to work on /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:06:01.428+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Dag_clima.py for tasks to queue
+[2024-04-07T15:06:01.432+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:06:01.431+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:06:01.462+0000] {processor.py:840} INFO - DAG(s) 'dag_clima' retrieved from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:06:01.510+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:06:01.509+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-07T15:06:01.551+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:06:01.551+0000] {dag.py:3834} INFO - Setting next_dagrun for dag_clima to 2024-04-07 00:00:00+00:00, run_after=2024-04-08 00:00:00+00:00
+[2024-04-07T15:06:01.598+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Dag_clima.py took 0.178 seconds
+[2024-04-07T15:06:32.421+0000] {processor.py:161} INFO - Started process (PID=3047) to work on /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:06:32.423+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Dag_clima.py for tasks to queue
+[2024-04-07T15:06:32.428+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:06:32.427+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:06:32.457+0000] {processor.py:840} INFO - DAG(s) 'dag_clima' retrieved from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:06:32.486+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:06:32.485+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-07T15:06:32.524+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:06:32.524+0000] {dag.py:3834} INFO - Setting next_dagrun for dag_clima to 2024-04-07 00:00:00+00:00, run_after=2024-04-08 00:00:00+00:00
+[2024-04-07T15:06:32.563+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Dag_clima.py took 0.150 seconds
+[2024-04-07T15:07:02.896+0000] {processor.py:161} INFO - Started process (PID=3104) to work on /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:07:02.899+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Dag_clima.py for tasks to queue
+[2024-04-07T15:07:02.902+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:07:02.901+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:07:02.931+0000] {processor.py:840} INFO - DAG(s) 'dag_clima' retrieved from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:07:02.964+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:07:02.964+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-07T15:07:03.002+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:07:03.001+0000] {dag.py:3834} INFO - Setting next_dagrun for dag_clima to 2024-04-07 00:00:00+00:00, run_after=2024-04-08 00:00:00+00:00
+[2024-04-07T15:07:03.043+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Dag_clima.py took 0.152 seconds
+[2024-04-07T15:07:33.539+0000] {processor.py:161} INFO - Started process (PID=3159) to work on /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:07:33.542+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Dag_clima.py for tasks to queue
+[2024-04-07T15:07:33.546+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:07:33.545+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:07:33.573+0000] {processor.py:840} INFO - DAG(s) 'dag_clima' retrieved from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:07:33.613+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:07:33.613+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-07T15:07:33.653+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:07:33.653+0000] {dag.py:3834} INFO - Setting next_dagrun for dag_clima to 2024-04-07 00:00:00+00:00, run_after=2024-04-08 00:00:00+00:00
+[2024-04-07T15:07:33.696+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Dag_clima.py took 0.162 seconds
+[2024-04-07T15:08:03.989+0000] {processor.py:161} INFO - Started process (PID=3215) to work on /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:08:03.992+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Dag_clima.py for tasks to queue
+[2024-04-07T15:08:03.997+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:08:03.995+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:08:04.026+0000] {processor.py:840} INFO - DAG(s) 'dag_clima' retrieved from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:08:04.060+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:08:04.059+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-07T15:08:04.102+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:08:04.101+0000] {dag.py:3834} INFO - Setting next_dagrun for dag_clima to 2024-04-07 00:00:00+00:00, run_after=2024-04-08 00:00:00+00:00
+[2024-04-07T15:08:04.132+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Dag_clima.py took 0.150 seconds
+[2024-04-07T15:08:34.232+0000] {processor.py:161} INFO - Started process (PID=3272) to work on /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:08:34.234+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Dag_clima.py for tasks to queue
+[2024-04-07T15:08:34.237+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:08:34.237+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:08:34.319+0000] {processor.py:840} INFO - DAG(s) 'dag_clima' retrieved from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:08:34.386+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:08:34.386+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-07T15:08:34.522+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:08:34.521+0000] {dag.py:3834} INFO - Setting next_dagrun for dag_clima to 2024-04-07 00:00:00+00:00, run_after=2024-04-08 00:00:00+00:00
+[2024-04-07T15:08:34.631+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Dag_clima.py took 0.404 seconds
+[2024-04-07T15:09:12.375+0000] {processor.py:161} INFO - Started process (PID=3335) to work on /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:09:12.377+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Dag_clima.py for tasks to queue
+[2024-04-07T15:09:12.380+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:09:12.379+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:09:12.408+0000] {processor.py:840} INFO - DAG(s) 'dag_clima' retrieved from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:09:12.438+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:09:12.438+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-07T15:09:12.477+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:09:12.477+0000] {dag.py:3834} INFO - Setting next_dagrun for dag_clima to 2024-04-07 00:00:00+00:00, run_after=2024-04-08 00:00:00+00:00
+[2024-04-07T15:09:15.482+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Dag_clima.py took 3.113 seconds
+[2024-04-07T15:09:48.350+0000] {processor.py:161} INFO - Started process (PID=3393) to work on /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:09:48.361+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Dag_clima.py for tasks to queue
+[2024-04-07T15:09:48.371+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:09:48.371+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:09:48.513+0000] {processor.py:840} INFO - DAG(s) 'dag_clima' retrieved from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:09:48.607+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:09:48.607+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-07T15:09:48.754+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:09:48.753+0000] {dag.py:3834} INFO - Setting next_dagrun for dag_clima to 2024-04-07 00:00:00+00:00, run_after=2024-04-08 00:00:00+00:00
+[2024-04-07T15:09:48.875+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Dag_clima.py took 0.543 seconds
+[2024-04-07T15:10:19.674+0000] {processor.py:161} INFO - Started process (PID=3450) to work on /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:10:19.677+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Dag_clima.py for tasks to queue
+[2024-04-07T15:10:19.683+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:10:19.682+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:10:19.714+0000] {processor.py:840} INFO - DAG(s) 'dag_clima' retrieved from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:10:19.759+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:10:19.758+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-07T15:10:19.809+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:10:19.808+0000] {dag.py:3834} INFO - Setting next_dagrun for dag_clima to 2024-04-07 00:00:00+00:00, run_after=2024-04-08 00:00:00+00:00
+[2024-04-07T15:10:19.860+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Dag_clima.py took 0.193 seconds
+[2024-04-07T15:10:51.129+0000] {processor.py:161} INFO - Started process (PID=3506) to work on /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:10:51.132+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Dag_clima.py for tasks to queue
+[2024-04-07T15:10:51.136+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:10:51.135+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:10:51.169+0000] {processor.py:840} INFO - DAG(s) 'dag_clima' retrieved from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:10:51.205+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:10:51.205+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-07T15:10:51.249+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:10:51.249+0000] {dag.py:3834} INFO - Setting next_dagrun for dag_clima to 2024-04-07 00:00:00+00:00, run_after=2024-04-08 00:00:00+00:00
+[2024-04-07T15:10:51.404+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Dag_clima.py took 0.283 seconds
+[2024-04-07T15:11:21.509+0000] {processor.py:161} INFO - Started process (PID=3561) to work on /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:11:21.511+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Dag_clima.py for tasks to queue
+[2024-04-07T15:11:21.514+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:11:21.514+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:11:21.541+0000] {processor.py:840} INFO - DAG(s) 'dag_clima' retrieved from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:11:21.571+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:11:21.570+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-07T15:11:21.607+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:11:21.607+0000] {dag.py:3834} INFO - Setting next_dagrun for dag_clima to 2024-04-07 00:00:00+00:00, run_after=2024-04-08 00:00:00+00:00
+[2024-04-07T15:11:21.647+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Dag_clima.py took 0.144 seconds
+[2024-04-07T15:11:51.908+0000] {processor.py:161} INFO - Started process (PID=3618) to work on /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:11:51.910+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Dag_clima.py for tasks to queue
+[2024-04-07T15:11:51.913+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:11:51.912+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:11:51.941+0000] {processor.py:840} INFO - DAG(s) 'dag_clima' retrieved from /opt/airflow/dags/Dag_clima.py
+[2024-04-07T15:11:51.972+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:11:51.972+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-07T15:11:52.011+0000] {logging_mixin.py:188} INFO - [2024-04-07T15:11:52.011+0000] {dag.py:3834} INFO - Setting next_dagrun for dag_clima to 2024-04-07 00:00:00+00:00, run_after=2024-04-08 00:00:00+00:00
+[2024-04-07T15:11:52.059+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Dag_clima.py took 0.157 seconds
