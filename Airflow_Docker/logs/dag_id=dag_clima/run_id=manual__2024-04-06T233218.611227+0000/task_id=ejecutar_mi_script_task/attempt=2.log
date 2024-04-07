@@ -1,0 +1,27 @@
+[2024-04-06T23:37:57.818+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_clima.ejecutar_mi_script_task manual__2024-04-06T23:32:18.611227+00:00 [queued]>
+[2024-04-06T23:37:57.890+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_clima.ejecutar_mi_script_task manual__2024-04-06T23:32:18.611227+00:00 [queued]>
+[2024-04-06T23:37:57.903+0000] {taskinstance.py:2193} INFO - Starting attempt 2 of 2
+[2024-04-06T23:37:58.122+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): ejecutar_mi_script_task> on 2024-04-06 23:32:18.611227+00:00
+[2024-04-06T23:37:58.139+0000] {standard_task_runner.py:60} INFO - Started process 972 to run task
+[2024-04-06T23:37:58.198+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag_clima', 'ejecutar_mi_script_task', 'manual__2024-04-06T23:32:18.611227+00:00', '--job-id', '55', '--raw', '--subdir', 'DAGS_FOLDER/Dag_clima.py', '--cfg-path', '/tmp/tmppzya4q2c']
+[2024-04-06T23:37:58.220+0000] {standard_task_runner.py:88} INFO - Job 55: Subtask ejecutar_mi_script_task
+[2024-04-06T23:37:58.743+0000] {task_command.py:423} INFO - Running <TaskInstance: dag_clima.ejecutar_mi_script_task manual__2024-04-06T23:32:18.611227+00:00 [running]> on host 0ebc2d070f55
+[2024-04-06T23:37:59.942+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_clima' AIRFLOW_CTX_TASK_ID='ejecutar_mi_script_task' AIRFLOW_CTX_EXECUTION_DATE='2024-04-06T23:32:18.611227+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-06T23:32:18.611227+00:00'
+[2024-04-06T23:37:59.962+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-04-06T23:37:59.987+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python "C:\\Users\\gusta\\Desktop\\Data Engineer\\Semana 7 - Dataframes con SQLalchemy y Psycopg\\TP Entregable\\Script.py"']
+[2024-04-06T23:38:00.385+0000] {subprocess.py:86} INFO - Output:
+[2024-04-06T23:38:00.794+0000] {subprocess.py:93} INFO - python: can't open file 'C:\Users\gusta\Desktop\Data Engineer\Semana 7 - Dataframes con SQLalchemy y Psycopg\TP Entregable\Script.py': [Errno 2] No such file or directory
+[2024-04-06T23:38:00.819+0000] {subprocess.py:97} INFO - Command exited with return code 2
+[2024-04-06T23:38:00.938+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2024-04-06T23:38:01.610+0000] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=dag_clima, task_id=ejecutar_mi_script_task, execution_date=20240406T233218, start_date=20240406T233757, end_date=20240406T233801
+[2024-04-06T23:38:05.526+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 55 for task ejecutar_mi_script_task (Bash command failed. The command returned a non-zero exit code 2.; 972)
+[2024-04-06T23:38:05.747+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-04-06T23:38:05.846+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
