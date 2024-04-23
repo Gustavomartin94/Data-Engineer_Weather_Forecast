@@ -1,0 +1,8 @@
+meteomatics
+python-dotenv
+psycopg2-binary
+apache-airflow
+datetime
+pandas
+sqlalchemy
+requests

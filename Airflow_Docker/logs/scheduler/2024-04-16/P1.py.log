@@ -1,0 +1,120 @@
+[2024-04-16T23:17:52.097+0000] {processor.py:161} INFO - Started process (PID=141) to work on /opt/airflow/dags/P1.py
+[2024-04-16T23:17:52.103+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/P1.py for tasks to queue
+[2024-04-16T23:17:52.121+0000] {logging_mixin.py:188} INFO - [2024-04-16T23:17:52.120+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/P1.py
+[2024-04-16T23:17:52.388+0000] {logging_mixin.py:188} INFO - [2024-04-16T23:17:52.265+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/P1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/P1.py", line 16, in <module>
+    'retry_delay': timedelta(minutes=5),
+                   ^^^^^^^^^
+NameError: name 'timedelta' is not defined
+[2024-04-16T23:17:52.464+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/P1.py
+[2024-04-16T23:17:52.661+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/P1.py took 0.613 seconds
+[2024-04-16T23:18:23.041+0000] {processor.py:161} INFO - Started process (PID=153) to work on /opt/airflow/dags/P1.py
+[2024-04-16T23:18:23.042+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/P1.py for tasks to queue
+[2024-04-16T23:18:23.048+0000] {logging_mixin.py:188} INFO - [2024-04-16T23:18:23.047+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/P1.py
+[2024-04-16T23:18:23.097+0000] {logging_mixin.py:188} INFO - [2024-04-16T23:18:23.082+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/P1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/P1.py", line 16, in <module>
+    'retry_delay': timedelta(minutes=5),
+                   ^^^^^^^^^
+NameError: name 'timedelta' is not defined
+[2024-04-16T23:18:23.110+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/P1.py
+[2024-04-16T23:18:23.587+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/P1.py took 0.560 seconds
+[2024-04-16T23:18:54.296+0000] {processor.py:161} INFO - Started process (PID=165) to work on /opt/airflow/dags/P1.py
+[2024-04-16T23:18:54.298+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/P1.py for tasks to queue
+[2024-04-16T23:18:54.350+0000] {logging_mixin.py:188} INFO - [2024-04-16T23:18:54.349+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/P1.py
+[2024-04-16T23:18:54.775+0000] {logging_mixin.py:188} INFO - [2024-04-16T23:18:54.695+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/P1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/P1.py", line 16, in <module>
+    'retry_delay': timedelta(minutes=5),
+                   ^^^^^^^^^
+NameError: name 'timedelta' is not defined
+[2024-04-16T23:18:54.856+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/P1.py
+[2024-04-16T23:18:54.996+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/P1.py took 0.821 seconds
+[2024-04-16T23:19:27.357+0000] {processor.py:161} INFO - Started process (PID=176) to work on /opt/airflow/dags/P1.py
+[2024-04-16T23:19:27.867+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/P1.py for tasks to queue
+[2024-04-16T23:19:27.898+0000] {logging_mixin.py:188} INFO - [2024-04-16T23:19:27.898+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/P1.py
+[2024-04-16T23:19:28.736+0000] {logging_mixin.py:188} INFO - [2024-04-16T23:19:28.639+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/P1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/P1.py", line 16, in <module>
+    'retry_delay': timedelta(minutes=5),
+                   ^^^^^^^^^
+NameError: name 'timedelta' is not defined
+[2024-04-16T23:19:28.769+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/P1.py
+[2024-04-16T23:19:29.257+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/P1.py took 2.397 seconds
+[2024-04-16T23:20:01.824+0000] {processor.py:161} INFO - Started process (PID=187) to work on /opt/airflow/dags/P1.py
+[2024-04-16T23:20:01.833+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/P1.py for tasks to queue
+[2024-04-16T23:20:01.900+0000] {logging_mixin.py:188} INFO - [2024-04-16T23:20:01.850+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/P1.py
+[2024-04-16T23:20:03.576+0000] {logging_mixin.py:188} INFO - [2024-04-16T23:20:02.841+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/P1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/P1.py", line 16, in <module>
+    'retry_delay': timedelta(minutes=5),
+                   ^^^^^^^^^
+NameError: name 'timedelta' is not defined
+[2024-04-16T23:20:03.653+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/P1.py
+[2024-04-16T23:20:04.018+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/P1.py took 2.278 seconds
+[2024-04-16T23:20:34.953+0000] {processor.py:161} INFO - Started process (PID=197) to work on /opt/airflow/dags/P1.py
+[2024-04-16T23:20:34.989+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/P1.py for tasks to queue
+[2024-04-16T23:20:35.013+0000] {logging_mixin.py:188} INFO - [2024-04-16T23:20:35.012+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/P1.py
+[2024-04-16T23:20:35.152+0000] {logging_mixin.py:188} INFO - [2024-04-16T23:20:35.115+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/P1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/P1.py", line 16, in <module>
+    'retry_delay': timedelta(minutes=5),
+                   ^^^^^^^^^
+NameError: name 'timedelta' is not defined
+[2024-04-16T23:20:35.206+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/P1.py
+[2024-04-16T23:20:35.332+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/P1.py took 0.404 seconds
+[2024-04-16T23:21:08.180+0000] {processor.py:161} INFO - Started process (PID=207) to work on /opt/airflow/dags/P1.py
+[2024-04-16T23:21:08.197+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/P1.py for tasks to queue
+[2024-04-16T23:21:08.246+0000] {logging_mixin.py:188} INFO - [2024-04-16T23:21:08.245+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/P1.py
+[2024-04-16T23:21:09.179+0000] {logging_mixin.py:188} INFO - [2024-04-16T23:21:08.926+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/P1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/P1.py", line 16, in <module>
+    'retry_delay': timedelta(minutes=5),
+                   ^^^^^^^^^
+NameError: name 'timedelta' is not defined
+[2024-04-16T23:21:09.291+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/P1.py
+[2024-04-16T23:21:09.497+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/P1.py took 1.354 seconds
+[2024-04-16T23:21:40.702+0000] {processor.py:161} INFO - Started process (PID=218) to work on /opt/airflow/dags/P1.py
+[2024-04-16T23:21:40.770+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/P1.py for tasks to queue
+[2024-04-16T23:21:40.777+0000] {logging_mixin.py:188} INFO - [2024-04-16T23:21:40.777+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/P1.py
+[2024-04-16T23:21:45.012+0000] {logging_mixin.py:188} INFO - [2024-04-16T23:21:43.788+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/P1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/P1.py", line 16, in <module>
+    'retry_delay': timedelta(minutes=5),
+                   ^^^^^^^^^
+NameError: name 'timedelta' is not defined
+[2024-04-16T23:21:45.571+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/P1.py
+[2024-04-16T23:21:45.790+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/P1.py took 5.123 seconds

@@ -1,0 +1,50 @@
+[2024-04-23T18:21:08.968+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-04-23T18:21:09.076+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nombre_del_dag.tarea_mi_funcion manual__2024-04-23T18:20:58.415282+00:00 [queued]>
+[2024-04-23T18:21:09.146+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nombre_del_dag.tarea_mi_funcion manual__2024-04-23T18:20:58.415282+00:00 [queued]>
+[2024-04-23T18:21:09.161+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2024-04-23T18:21:10.405+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): tarea_mi_funcion> on 2024-04-23 18:20:58.415282+00:00
+[2024-04-23T18:21:10.448+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nombre_del_dag', 'tarea_mi_funcion', 'manual__2024-04-23T18:20:58.415282+00:00', '--job-id', '400', '--raw', '--subdir', 'DAGS_FOLDER/P3.py', '--cfg-path', '/tmp/tmp7_ohw_gn']
+[2024-04-23T18:21:10.445+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=351) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-04-23T18:21:10.462+0000] {standard_task_runner.py:91} INFO - Job 400: Subtask tarea_mi_funcion
+[2024-04-23T18:21:10.470+0000] {standard_task_runner.py:63} INFO - Started process 360 to run task
+[2024-04-23T18:21:12.665+0000] {task_command.py:426} INFO - Running <TaskInstance: nombre_del_dag.tarea_mi_funcion manual__2024-04-23T18:20:58.415282+00:00 [running]> on host 26fbc25bb53c
+[2024-04-23T18:21:14.308+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='tu_nombre' AIRFLOW_CTX_DAG_ID='nombre_del_dag' AIRFLOW_CTX_TASK_ID='tarea_mi_funcion' AIRFLOW_CTX_EXECUTION_DATE='2024-04-23T18:20:58.415282+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-23T18:20:58.415282+00:00'
+[2024-04-23T18:21:14.336+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-04-23T18:24:10.218+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-04-23T18:24:10.240+0000] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/plugins/Script.py", line 87, in ETL
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "data-engineer-cluster.cyhh5bfevlmn.us-east-1.redshift.amazonaws.com" (52.44.43.227), port 5439 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+[2024-04-23T18:24:10.422+0000] {taskinstance.py:1205} INFO - Marking task as UP_FOR_RETRY. dag_id=nombre_del_dag, task_id=tarea_mi_funcion, execution_date=20240423T182058, start_date=20240423T182109, end_date=20240423T182410
+[2024-04-23T18:24:10.485+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 400 for task tarea_mi_funcion (connection to server at "data-engineer-cluster.cyhh5bfevlmn.us-east-1.redshift.amazonaws.com" (52.44.43.227), port 5439 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+; 360)
+[2024-04-23T18:24:10.547+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-04-23T18:24:10.605+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-04-23T18:24:10.687+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
