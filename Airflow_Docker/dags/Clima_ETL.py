@@ -19,7 +19,7 @@ default_args = {
 
 # Define el DAG
 dag = DAG(
-    'ETL_Clima.',
+    'ETL_Clima',
     default_args=default_args,
     description='Descripción del DAG',
     schedule_interval='@daily',  # El DAG se ejecutará diariamente
