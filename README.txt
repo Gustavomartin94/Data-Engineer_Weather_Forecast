@@ -2,4 +2,4 @@ Este trabajo consiste en obtener una API del pronóstico del clima de las próxi
 
 En la raíz de la carpeta se encuentra todo lo necesario para crear la imagen mediante el Dockerfile
 
-Dentro de la carpeta Airflow se encuentra todo lo necesario para hacer correr este ETL de manera aumática diariamente
+Dentro de la carpeta Airflow_Dockerfile se encuentra todo lo necesario para hacer correr este ETL de manera aumática diariamente
