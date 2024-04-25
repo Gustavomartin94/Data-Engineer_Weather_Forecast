@@ -6,6 +6,7 @@ venv/
 old/
 Entregable_Gustavo_Martin.ipynb
 Airflow_Docker/logs/
+Airflow_Docker/logs/dag_processor_manager/
 
 # Excepto los archivos .env dentro de la carpeta Airflow_Docker
 !Airflow_Docker/.env
