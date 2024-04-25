@@ -3,6 +3,7 @@ import pandas as pd
 from datetime import datetime
 from config import KEY
 from constants import cities_coordinates
+import pendulum
 
 import psycopg2
 from config import dbname, user, clave, host, port2
@@ -21,6 +22,9 @@ def Extract_clima():
         'appid': KEY,  # Tu clave de API de OpenWeatherMap
         'cnt': 4  # Número de períodos de pronóstico que deseas recibir
     }
+
+    # Configurar la zona horaria de Argentina
+    timezone = pendulum.timezone('America/Argentina/Buenos_Aires')
 
     # Lista para almacenar los datos de cada ubicación
     data_list = []
@@ -43,7 +47,9 @@ def Extract_clima():
             # Extraer los datos relevantes del pronóstico futuro
             forecast_data = weather_data['list']
             for forecast in forecast_data:
-                forecast_time = forecast['dt_txt']
+                # Convertir la fecha y hora a la zona horaria de Argentina
+                forecast_time = pendulum.parse(forecast['dt_txt']).in_timezone(timezone)
+                
                 temperature = forecast['main']['temp']
                 humidity = forecast['main']['humidity']
                 wind_speed = forecast['wind']['speed']
@@ -69,6 +75,9 @@ def Transform_clima():
     
     df=Extract_clima()
     
+    # Configurar la zona horaria de Argentina
+    timezone = pendulum.timezone('America/Argentina/Buenos_Aires')
+    
     # Convertir la cadena de fecha y hora a formato datetime
     df['Fecha y Hora'] = pd.to_datetime(df['Fecha y Hora'])
 
@@ -76,7 +85,7 @@ def Transform_clima():
     df['Fecha y Hora'] = df['Fecha y Hora'].dt.strftime('%Y-%m-%d %H:%M')
 
     # Agregar la columna de Fecha_Actualizacion
-    fecha_actualizacion = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    fecha_actualizacion = pendulum.now(timezone).strftime('%Y-%m-%d %H:%M:%S')
     df['Fecha_Actualizacion'] = fecha_actualizacion
 
     # Agregar una columna de clave primaria e indice

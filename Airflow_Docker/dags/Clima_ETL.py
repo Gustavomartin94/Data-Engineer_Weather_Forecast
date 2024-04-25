@@ -1,6 +1,8 @@
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from datetime import datetime, timedelta
+import pendulum
+
 
 # Importar la funciones
 
@@ -23,7 +25,7 @@ dag = DAG(
     default_args=default_args,
     description='Descripción del DAG',
     schedule_interval='@daily',  # El DAG se ejecutará diariamente
-    start_date=datetime(2024, 4, 22),
+    start_date=datetime(2024, 4, 22, tzinfo=pendulum.timezone('America/Argentina/Buenos_Aires')),
     catchup=False,
 )
 
