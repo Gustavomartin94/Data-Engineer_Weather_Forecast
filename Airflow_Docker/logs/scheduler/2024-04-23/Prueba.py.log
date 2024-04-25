@@ -1108,3 +1108,73 @@
 [2024-04-23T18:37:31.335+0000] {logging_mixin.py:188} INFO - [2024-04-23T18:37:31.323+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2024-04-23T18:37:31.562+0000] {logging_mixin.py:188} INFO - [2024-04-23T18:37:31.562+0000] {dag.py:3954} INFO - Setting next_dagrun for m_dag_ejecut. to 2024-04-07 00:00:00+00:00, run_after=2024-04-08 00:00:00+00:00
 [2024-04-23T18:37:31.797+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Prueba.py took 0.782 seconds
+[2024-04-23T18:38:03.613+0000] {processor.py:161} INFO - Started process (PID=1224) to work on /opt/airflow/dags/Prueba.py
+[2024-04-23T18:38:03.615+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Prueba.py for tasks to queue
+[2024-04-23T18:38:03.631+0000] {logging_mixin.py:188} INFO - [2024-04-23T18:38:03.630+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Prueba.py
+[2024-04-23T18:38:03.726+0000] {logging_mixin.py:188} INFO - /opt/Prueba2.py
+[2024-04-23T18:38:03.735+0000] {logging_mixin.py:188} INFO - Error al ejecutar el script: [Errno 2] No such file or directory: '/opt/Prueba2.py'
+[2024-04-23T18:38:03.737+0000] {logging_mixin.py:188} INFO - Error al ejecutar el script: [Errno 2] No such file or directory: '/opt/Prueba2.py'
+[2024-04-23T18:38:03.754+0000] {processor.py:840} INFO - DAG(s) 'm_dag_ejecut.' retrieved from /opt/airflow/dags/Prueba.py
+[2024-04-23T18:38:03.870+0000] {logging_mixin.py:188} INFO - [2024-04-23T18:38:03.870+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-04-23T18:38:03.977+0000] {logging_mixin.py:188} INFO - [2024-04-23T18:38:03.977+0000] {dag.py:3954} INFO - Setting next_dagrun for m_dag_ejecut. to 2024-04-07 00:00:00+00:00, run_after=2024-04-08 00:00:00+00:00
+[2024-04-23T18:38:04.120+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Prueba.py took 0.531 seconds
+[2024-04-23T18:38:36.812+0000] {processor.py:161} INFO - Started process (PID=1240) to work on /opt/airflow/dags/Prueba.py
+[2024-04-23T18:38:36.814+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Prueba.py for tasks to queue
+[2024-04-23T18:38:36.816+0000] {logging_mixin.py:188} INFO - [2024-04-23T18:38:36.815+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Prueba.py
+[2024-04-23T18:38:36.848+0000] {logging_mixin.py:188} INFO - /opt/Prueba2.py
+[2024-04-23T18:38:36.849+0000] {logging_mixin.py:188} INFO - Error al ejecutar el script: [Errno 2] No such file or directory: '/opt/Prueba2.py'
+[2024-04-23T18:38:36.850+0000] {logging_mixin.py:188} INFO - Error al ejecutar el script: [Errno 2] No such file or directory: '/opt/Prueba2.py'
+[2024-04-23T18:38:36.859+0000] {processor.py:840} INFO - DAG(s) 'm_dag_ejecut.' retrieved from /opt/airflow/dags/Prueba.py
+[2024-04-23T18:38:36.902+0000] {logging_mixin.py:188} INFO - [2024-04-23T18:38:36.901+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-04-23T18:38:36.940+0000] {logging_mixin.py:188} INFO - [2024-04-23T18:38:36.939+0000] {dag.py:3954} INFO - Setting next_dagrun for m_dag_ejecut. to 2024-04-07 00:00:00+00:00, run_after=2024-04-08 00:00:00+00:00
+[2024-04-23T18:38:37.763+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Prueba.py took 0.967 seconds
+[2024-04-23T18:39:08.141+0000] {processor.py:161} INFO - Started process (PID=1257) to work on /opt/airflow/dags/Prueba.py
+[2024-04-23T18:39:08.144+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Prueba.py for tasks to queue
+[2024-04-23T18:39:08.147+0000] {logging_mixin.py:188} INFO - [2024-04-23T18:39:08.146+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Prueba.py
+[2024-04-23T18:39:08.214+0000] {logging_mixin.py:188} INFO - /opt/Prueba2.py
+[2024-04-23T18:39:08.215+0000] {logging_mixin.py:188} INFO - Error al ejecutar el script: [Errno 2] No such file or directory: '/opt/Prueba2.py'
+[2024-04-23T18:39:08.216+0000] {logging_mixin.py:188} INFO - Error al ejecutar el script: [Errno 2] No such file or directory: '/opt/Prueba2.py'
+[2024-04-23T18:39:08.224+0000] {processor.py:840} INFO - DAG(s) 'm_dag_ejecut.' retrieved from /opt/airflow/dags/Prueba.py
+[2024-04-23T18:39:08.298+0000] {logging_mixin.py:188} INFO - [2024-04-23T18:39:08.298+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-04-23T18:39:08.503+0000] {logging_mixin.py:188} INFO - [2024-04-23T18:39:08.502+0000] {dag.py:3954} INFO - Setting next_dagrun for m_dag_ejecut. to 2024-04-07 00:00:00+00:00, run_after=2024-04-08 00:00:00+00:00
+[2024-04-23T18:39:08.615+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Prueba.py took 0.494 seconds
+[2024-04-23T18:39:43.198+0000] {processor.py:161} INFO - Started process (PID=1273) to work on /opt/airflow/dags/Prueba.py
+[2024-04-23T18:39:43.205+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Prueba.py for tasks to queue
+[2024-04-23T18:39:43.208+0000] {logging_mixin.py:188} INFO - [2024-04-23T18:39:43.207+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Prueba.py
+[2024-04-23T18:39:43.274+0000] {logging_mixin.py:188} INFO - /opt/Prueba2.py
+[2024-04-23T18:39:43.278+0000] {logging_mixin.py:188} INFO - Error al ejecutar el script: [Errno 2] No such file or directory: '/opt/Prueba2.py'
+[2024-04-23T18:39:43.280+0000] {logging_mixin.py:188} INFO - Error al ejecutar el script: [Errno 2] No such file or directory: '/opt/Prueba2.py'
+[2024-04-23T18:39:43.290+0000] {processor.py:840} INFO - DAG(s) 'm_dag_ejecut.' retrieved from /opt/airflow/dags/Prueba.py
+[2024-04-23T18:39:43.396+0000] {logging_mixin.py:188} INFO - [2024-04-23T18:39:43.395+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-04-23T18:39:43.459+0000] {logging_mixin.py:188} INFO - [2024-04-23T18:39:43.458+0000] {dag.py:3954} INFO - Setting next_dagrun for m_dag_ejecut. to 2024-04-07 00:00:00+00:00, run_after=2024-04-08 00:00:00+00:00
+[2024-04-23T18:39:44.181+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Prueba.py took 1.003 seconds
+[2024-04-23T18:40:15.956+0000] {processor.py:161} INFO - Started process (PID=1288) to work on /opt/airflow/dags/Prueba.py
+[2024-04-23T18:40:15.959+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Prueba.py for tasks to queue
+[2024-04-23T18:40:15.962+0000] {logging_mixin.py:188} INFO - [2024-04-23T18:40:15.961+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Prueba.py
+[2024-04-23T18:40:16.017+0000] {logging_mixin.py:188} INFO - /opt/Prueba2.py
+[2024-04-23T18:40:16.018+0000] {logging_mixin.py:188} INFO - Error al ejecutar el script: [Errno 2] No such file or directory: '/opt/Prueba2.py'
+[2024-04-23T18:40:16.019+0000] {logging_mixin.py:188} INFO - Error al ejecutar el script: [Errno 2] No such file or directory: '/opt/Prueba2.py'
+[2024-04-23T18:40:16.042+0000] {processor.py:840} INFO - DAG(s) 'm_dag_ejecut.' retrieved from /opt/airflow/dags/Prueba.py
+[2024-04-23T18:40:16.104+0000] {logging_mixin.py:188} INFO - [2024-04-23T18:40:16.103+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-04-23T18:40:16.309+0000] {logging_mixin.py:188} INFO - [2024-04-23T18:40:16.308+0000] {dag.py:3954} INFO - Setting next_dagrun for m_dag_ejecut. to 2024-04-07 00:00:00+00:00, run_after=2024-04-08 00:00:00+00:00
+[2024-04-23T18:40:16.383+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Prueba.py took 0.450 seconds
+[2024-04-23T18:40:47.283+0000] {processor.py:161} INFO - Started process (PID=1307) to work on /opt/airflow/dags/Prueba.py
+[2024-04-23T18:40:47.285+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Prueba.py for tasks to queue
+[2024-04-23T18:40:47.301+0000] {logging_mixin.py:188} INFO - [2024-04-23T18:40:47.300+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Prueba.py
+[2024-04-23T18:40:47.495+0000] {logging_mixin.py:188} INFO - /opt/Prueba2.py
+[2024-04-23T18:40:47.497+0000] {logging_mixin.py:188} INFO - Error al ejecutar el script: [Errno 2] No such file or directory: '/opt/Prueba2.py'
+[2024-04-23T18:40:47.497+0000] {logging_mixin.py:188} INFO - Error al ejecutar el script: [Errno 2] No such file or directory: '/opt/Prueba2.py'
+[2024-04-23T18:40:47.513+0000] {processor.py:840} INFO - DAG(s) 'm_dag_ejecut.' retrieved from /opt/airflow/dags/Prueba.py
+[2024-04-23T18:40:47.631+0000] {logging_mixin.py:188} INFO - [2024-04-23T18:40:47.631+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-04-23T18:40:47.749+0000] {logging_mixin.py:188} INFO - [2024-04-23T18:40:47.749+0000] {dag.py:3954} INFO - Setting next_dagrun for m_dag_ejecut. to 2024-04-07 00:00:00+00:00, run_after=2024-04-08 00:00:00+00:00
+[2024-04-23T18:40:49.798+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Prueba.py took 2.543 seconds
+[2024-04-23T22:40:12.732+0000] {processor.py:161} INFO - Started process (PID=1340) to work on /opt/airflow/dags/Prueba.py
+[2024-04-23T22:40:12.746+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Prueba.py for tasks to queue
+[2024-04-23T22:40:12.768+0000] {logging_mixin.py:188} INFO - [2024-04-23T22:40:12.767+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Prueba.py
+[2024-04-23T22:40:13.450+0000] {logging_mixin.py:188} INFO - /opt/Prueba2.py
+[2024-04-23T22:40:13.527+0000] {logging_mixin.py:188} INFO - Error al ejecutar el script: [Errno 2] No such file or directory: '/opt/Prueba2.py'
+[2024-04-23T22:40:13.564+0000] {logging_mixin.py:188} INFO - Error al ejecutar el script: [Errno 2] No such file or directory: '/opt/Prueba2.py'
+[2024-04-23T22:40:13.593+0000] {processor.py:840} INFO - DAG(s) 'm_dag_ejecut.' retrieved from /opt/airflow/dags/Prueba.py
+[2024-04-23T22:40:13.722+0000] {logging_mixin.py:188} INFO - [2024-04-23T22:40:13.722+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-04-23T22:40:13.865+0000] {logging_mixin.py:188} INFO - [2024-04-23T22:40:13.865+0000] {dag.py:3954} INFO - Setting next_dagrun for m_dag_ejecut. to 2024-04-07 00:00:00+00:00, run_after=2024-04-08 00:00:00+00:00
+[2024-04-23T22:40:14.277+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Prueba.py took 1.567 seconds
