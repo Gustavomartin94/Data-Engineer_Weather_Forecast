@@ -1,5 +1,6 @@
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
+from airflow.operators.email_operator import EmailOperator
 from datetime import datetime, timedelta
 import pendulum
 
@@ -49,5 +50,14 @@ tarea_load_clima = PythonOperator(
     dag=dag,
 )
 
+# Tarea de envío de correo electrónico
+tarea_send_email = EmailOperator(
+    task_id='send_email',
+    to='pruebaairflow0@gmail.com',
+    subject='ETL Clima Completo',
+    html_content='<p>El proceso ETL de clima ha finalizado exitosamente.</p>',
+    dag=dag,
+)
+
 # Establecer dependencias entre las tareas
-tarea_extract_clima >> tarea_transform_clima >> tarea_load_clima
+tarea_extract_clima >> tarea_transform_clima >> tarea_load_clima >> tarea_send_email
