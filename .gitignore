@@ -8,6 +8,7 @@ Entregable_Gustavo_Martin.ipynb
 Airflow_Docker/logs/
 Airflow_Docker/logs/dag_processor_manager/
 Airflow_Docker/config/
+Airflow_Docker/config/airflow.cfg
 
 # Excepto los archivos .env dentro de la carpeta Airflow_Docker
 !Airflow_Docker/.env
