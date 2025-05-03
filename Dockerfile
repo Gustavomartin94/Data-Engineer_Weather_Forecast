@@ -1,17 +1,17 @@
-# Usar la imagen oficial de Python
+# Use the official Python image
 FROM python:3.8
 
-# Establecer el directorio de trabajo en /app
+# Set the working directory to /app
 WORKDIR /app
 
-# Copiar todos los archivos y directorios del directorio actual al contenedor
+# Copy all files and directories from the current directory to the container
 COPY . .
 
-# Instalar las dependencias del proyecto
+# Install project dependencies
 RUN pip install -r requirements.txt
 
-# Establecer la zona horaria en el contenedor
+# Set the timezone in the container
 ENV TZ=America/Argentina/Buenos_Aires
 
-# CMD para ejecutar el script Python (-u permite ver la salida en tiempo real, sin necesida que se almacene en buffer)
+# CMD to execute the Python script (-u allows real-time output without buffering)
 CMD ["python", "-u", "Script.py"]
