@@ -1,4 +1,4 @@
-# Diccionario de ciudades y coordenadas
+# Dictionary of cities and coordinates
 cities_coordinates = {
     "Córdoba": (-31.4135, -64.18105),
     "Buenos Aires": (-34.61315, -58.37723),
@@ -12,5 +12,5 @@ cities_coordinates = {
     "San Salvador de Jujuy": (-24.19457, -65.29712),
     "Rosario": (-32.94682, -60.63932),
     "Mendoza": (-32.89084, -68.82717),
-    # Agrega más ciudades aquí
+    # Add more cities here
 }
