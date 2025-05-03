@@ -1,17 +1,16 @@
 import os
 from dotenv import load_dotenv
 
-# Cargar las variables de entorno desde el archivo .env
+# Load environment variables from the .env file
 load_dotenv()
 
-# Obtener las variables de entorno
-#API
+# Retrieve environment variables
+# API
 KEY = os.getenv("KEY")
 
-#SQL
-dbname= os.getenv("dbname")
-user= os.getenv("user")
-clave= os.getenv("clave")
-host= os.getenv("host")
-port2= os.getenv("port2")
-
+# SQL
+dbname = os.getenv("dbname")
+user = os.getenv("user")
+clave = os.getenv("clave")
+host = os.getenv("host")
+port2 = os.getenv("port2")
