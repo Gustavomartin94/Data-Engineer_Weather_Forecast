@@ -1,4 +1,4 @@
-#EXTRACCIÓN Y TRANSFORMACIÓN
+# EXTRACTION AND TRANSFORMATION
 
 import requests
 import pandas as pd
@@ -6,48 +6,48 @@ from datetime import datetime
 from config import KEY
 from constants import cities_coordinates
 
-# Definir la URL base para la API de OpenWeatherMap
+# Define the base URL for the OpenWeatherMap API
 base_url = "http://api.openweathermap.org/data/2.5/forecast"
 
-# Coordenadas de las ubicaciones deseadas
+# Coordinates of desired locations
 coordinates = [(city, coord[0], coord[1]) for city, coord in cities_coordinates.items()]
 
-# Definir los parámetros de la consulta
+# Define query parameters
 parameters = {
-    'units': 'metric',  # Para obtener unidades métricas
-    'appid': KEY,  # Tu clave de API de OpenWeatherMap
-    'cnt': 4  # Número de períodos de pronóstico que deseas recibir
+    'units': 'metric',  # To get metric units
+    'appid': KEY,  # Your OpenWeatherMap API key
+    'cnt': 4  # Number of forecast periods to receive
 }
 
-# Lista para almacenar los datos de cada ubicación
+# List to store data for each location
 data_list = []
 
-# Realizar la consulta a la API para cada ubicación
+# Query the API for each location
 for city, lat, lon in coordinates:
-    # Construir la URL para la consulta
+    # Build the query URL
     query_params = parameters.copy()
     query_params['lat'] = lat
     query_params['lon'] = lon
 
-    # Realizar la solicitud GET a la API de OpenWeatherMap
+    # Make a GET request to the OpenWeatherMap API
     response = requests.get(base_url, params=query_params)
     
-    # Verificar si la solicitud fue exitosa
+    # Check if the request was successful
     if response.status_code == 200:
-        # Convertir la respuesta a formato JSON
+        # Convert the response to JSON format
         weather_data = response.json()
 
-        # Extraer los datos relevantes del pronóstico futuro
+        # Extract relevant future forecast data
         forecast_data = weather_data['list']
         for forecast in forecast_data:
             forecast_time = forecast['dt_txt']
             temperature = forecast['main']['temp']
             humidity = forecast['main']['humidity']
             wind_speed = forecast['wind']['speed']
-            # Agregar los datos a la lista
+            # Add data to the list
             data_list.append({
-                'lat':lat,
-                'lon':lon,
+                'lat': lat,
+                'lon': lon,
                 'Ciudad': city,
                 'Fecha y Hora': forecast_time,
                 'Temperatura C': temperature,
@@ -55,35 +55,35 @@ for city, lat, lon in coordinates:
                 'Velocidad de viento m/s': wind_speed,
             })
     else:
-        print(f"Error al obtener datos para {symbol}: {response.status_code}")
+        print(f"Error retrieving data for {symbol}: {response.status_code}")
 
-# Crear un DataFrame a partir de los datos recopilados
+# Create a DataFrame from the collected data
 df_final = pd.DataFrame(data_list)
 
-# Convertir la cadena de fecha y hora a formato datetime
+# Convert the date and time string to datetime format
 df_final['Fecha y Hora'] = pd.to_datetime(df_final['Fecha y Hora'])
 
-# Formatear la columna 'Fecha y Hora' a solo fecha y hora (sin segundos)
+# Format the 'Fecha y Hora' column to display only date and time (without seconds)
 df_final['Fecha y Hora'] = df_final['Fecha y Hora'].dt.strftime('%Y-%m-%d %H:%M')
 
-# Agregar la columna de Fecha_Actualizacion
+# Add the update date column
 fecha_actualizacion = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 df_final['Fecha_Actualizacion'] = fecha_actualizacion
 
-# Agregar una columna de clave primaria e indice
+# Add a primary key and index column
 df_final['Primary_Key'] = df_final['Ciudad'] + ' ' + df_final['Fecha y Hora']
 
-# Reordenar las columnas
-df_final = df_final[['lat','lon','Fecha y Hora','Ciudad',  'Temperatura C', 'Humedad Relativa %', 'Velocidad de viento m/s','Fecha_Actualizacion', 'Primary_Key']]
+# Reorder the columns
+df_final = df_final[['lat', 'lon', 'Fecha y Hora', 'Ciudad', 'Temperatura C', 'Humedad Relativa %', 'Velocidad de viento m/s', 'Fecha_Actualizacion', 'Primary_Key']]
 
 #-----------------------------------------------------------------------------------------------
 
-# CARGA A REDSHIFT
+# LOADING TO REDSHIFT
 
 import psycopg2
 from config import dbname, user, clave, host, port2
 
-#cedenciales
+# Credentials
 conn = psycopg2.connect(
     dbname=dbname,
     user=user,
@@ -92,13 +92,13 @@ conn = psycopg2.connect(
     port=port2
 )
 
-# Crear cursor
+# Create cursor
 cur = conn.cursor()
 
-# Insertar datos
+# Insert data
 sql = "INSERT INTO clima VALUES ( %s, %s, %s, %s, %s, %s, %s, %s, %s);"
 
-# Actualiza datos, borrando los anteriores cuando el Primary_key se repite por actualización
+# Update data, deleting previous entries when Primary_Key is duplicated due to updates
 sql_quitar_anteriores = """
     DELETE FROM clima 
     WHERE (Primary_Key, fecha_actualizacion) NOT IN (
@@ -112,15 +112,14 @@ sql_quitar_anteriores = """
     );
 """
 
-
 for index, row in df_final.iterrows():
-    cur.execute(sql, (row['lat'],row['lon'] ,row['Fecha y Hora'], row['Ciudad'], row['Temperatura C']
-                      , row['Humedad Relativa %'], row['Velocidad de viento m/s'], row['Fecha_Actualizacion'],
+    cur.execute(sql, (row['lat'], row['lon'], row['Fecha y Hora'], row['Ciudad'], row['Temperatura C'],
+                      row['Humedad Relativa %'], row['Velocidad de viento m/s'], row['Fecha_Actualizacion'],
                       row['Primary_Key']))
     
 cur.execute(sql_quitar_anteriores)
 
-# confirmar cambios
+# Confirm changes
 conn.commit()
 
 # Close cursor and connection
