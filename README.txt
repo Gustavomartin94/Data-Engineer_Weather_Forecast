@@ -1,5 +1,5 @@
 ENGLISH
-This project retrieves weather forecast data (Temperature, Humidity %, and Wind Speed) for the next 12 hours in 12 cities and exports it to a Redshift database.
+This project retrieves weather forecast data (Temperature, Humidity %, and Wind Speed) for the next 12 hours in 12 cities from a weather API and exports it to a Redshift database.
 
 In the root folder, you will find all the files needed to build the image using the Dockerfile.
 
