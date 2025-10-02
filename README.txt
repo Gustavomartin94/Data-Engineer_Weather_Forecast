@@ -1,9 +1,9 @@
 ENGLISH
-This task involves obtaining a weather forecast API for the next 12 hours (Temperature, % Humidity, and Wind Speed) in 12 cities and exporting it to a Redshift database.
+This project retrieves weather forecast data (Temperature, Humidity %, and Wind Speed) for the next 12 hours in 12 cities and exports it to a Redshift database.
 
-In the root folder, you will find everything necessary to create the image using the Dockerfile.
+In the root folder, you will find all the files needed to build the image using the Dockerfile.
 
-Inside the Airflow_Dockerfile folder, you will find everything needed to run this ETL automatically on a daily basis.
+In the Airflow_Dockerfile folder, you will find everything required to run this ETL automatically on a daily basis.
 
 
 SPANISH
